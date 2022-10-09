@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Solution {
+
+	public static void printFahrenheitTable(int start, int end, int step) {
+        for( int fahrenheit = start ; fahrenheit <=end ; fahrenheit+=step){
+            
+       int celsius = (int)((5.0/9)*(fahrenheit-32));
+        System.out.println(fahrenheit +"\t" +celsius);
+        }
+    }
+    
+		/* Your class should be named Solution 
+		 * Don't write main(). 
+		 * Don't read input, it is passed as function argument. 
+		 * Print the specified output in required format. 
+		 * Taking input is handled automatically. 
+		 */
+		public static void main(String[] args){
+            Scanner s = new Scanner(System.in);
+            int start = s.nextInt();
+            int end = s.nextInt();
+            int step = s.nextInt();
+            printFahrenheitTable(start,end,step);
+	}
+}
